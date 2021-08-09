@@ -9,13 +9,13 @@ create, update ,delete and search student records from a students directory that
 clone the project
 
 ## Step 2
-Open Bidvest Assessment
+open Bidvest Assessment
 
 ## Step 3
-Navigate to run.php 
+navigate to run.php 
 
 ## Step 4
-Change $baseUrl to your local development path
+change $baseUrl to your local development path
 
 ## Step 5
 type command php run.php
@@ -23,4 +23,4 @@ type command php run.php
 ## Step 6
 After that everything is self explanatory to be honest
 
-Thank you for the opporuntity,it was fun.
+Thank you for the opportunity,it was fun.
