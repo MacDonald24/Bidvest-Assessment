@@ -1,4 +1,4 @@
-# STUDENTS, A PHP CLI CRUD APP
+# STUDENTS, A PHP 8 CLI CRUD APP
 
 StudentManagementConsole, is a very simple, PHP Command Line CRUD Application to manage students, that allows user to
 create, update ,delete and search student records from a students directory that has json files.
