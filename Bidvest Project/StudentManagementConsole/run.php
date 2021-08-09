@@ -98,11 +98,11 @@ include "classes\StudentData.php";
                             $validateCurriculum = true;
                         }
 
-                        /*if(is_numeric($curriculum))
+                        if(is_numeric($curriculum))
                         {
                             $validateCurriculum = true;
                         }
-
+                        /*
                         if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $curriculum))
                         {
                             $validateCurriculum = true;
@@ -212,6 +212,11 @@ include "classes\StudentData.php";
                                             $validateCurriculum = true;
                                         }
 
+                                        if(is_numeric($curriculum))
+                                        {
+                                            $validateCurriculum = true;
+                                        }
+
                                     } while ($validateCurriculum);
 
                                     $editStudent = new Student();
@@ -291,7 +296,7 @@ include "classes\StudentData.php";
                             {
                                 $studentFieldArray = array("name", "surname", "age","curriculum");
                                 if (in_array($argument[0], $studentFieldArray)) {
-                                   $studentsFiltered = $studentData->getStudentsByCriteria($argument[0],$argument[1]);
+                                   $studentsFiltered = $studentData->getStudentsByCriteria(strtolower($argument[0]),strtolower($argument[1]));
                                     $mask = "|%-15.30s |%-15.30s | %-15.30s|%-7.4s|%-15.30s |\n";
                                     printf($mask, 'id', 'Name','Surname','Age' ,'Curriculum');
                                     foreach ($studentsFiltered as $student)
